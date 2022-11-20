@@ -11,6 +11,8 @@
 /PiratBay_Unity/[Mm]emoryCaptures/
 /PiratBay_Unity/[Uu]serSettings/
 
+/API_Proyecto/API_Exercise/Inter
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
