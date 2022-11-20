@@ -127,7 +127,7 @@
 	<object class="MixerBusFader" id="{393e0287-b0eb-4dcf-89e5-8e07d391afab}" />
 	<object class="SpatialiserEffect" id="{223fe79e-8125-43b8-9379-699720323e43}">
 		<property name="extentMode">
-			<value>1</value>
+			<value>2</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{857c753e-359f-4582-aa02-6524e1ede375}" />
