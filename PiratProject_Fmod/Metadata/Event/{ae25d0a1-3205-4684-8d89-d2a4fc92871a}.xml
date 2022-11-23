@@ -5,7 +5,7 @@
 			<value>waves</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>4</value>
 		</property>
 		<relationship name="folder">
 			<destination>{3f3d033b-32da-4aeb-bb63-b5a073b57645}</destination>
@@ -165,9 +165,20 @@
 	<object class="MixerBusEffectChain" id="{2e694366-af55-4791-a013-c4d60353b4ee}">
 		<relationship name="effects">
 			<destination>{8abba2d5-2c06-4302-8b85-a2e70fb45ce1}</destination>
+			<destination>{99867cd7-2887-4055-bfcb-4fd0aa7175fa}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{8ee84a40-b23a-4e1e-8b13-55c0f3294046}" />
+	<object class="MixerBusPanner" id="{8ee84a40-b23a-4e1e-8b13-55c0f3294046}">
+		<property name="surroundPanDirection">
+			<value>-7.59464359</value>
+		</property>
+		<property name="surroundPanExtent">
+			<value>329.415924</value>
+		</property>
+		<property name="overridingOutputFormat">
+			<value>4</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{52d3c01c-c4f5-47a4-81bd-c3c179834af3}" />
 	<object class="AutomationCurve" id="{864df982-3c91-4d09-a788-a9efa3ca3e6c}">
 		<relationship name="parameter">
@@ -190,6 +201,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{8abba2d5-2c06-4302-8b85-a2e70fb45ce1}" />
+	<object class="SpatialiserEffect" id="{99867cd7-2887-4055-bfcb-4fd0aa7175fa}">
+		<property name="panBlend">
+			<value>0</value>
+		</property>
+		<property name="userStereoSeparation">
+			<value>180</value>
+		</property>
+		<property name="userStereoAxis">
+			<value>-104</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{b2d852ba-5db9-4a67-b031-3c23d5ed4902}">
 		<property name="position">
 			<value>3.6392603800140746</value>
