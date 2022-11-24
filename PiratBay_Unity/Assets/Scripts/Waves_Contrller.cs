@@ -71,7 +71,7 @@ public class Waves_Contrller : MonoBehaviour
     private GameObject nearestObject(GameObject[] objecs){
         GameObject nearestObject = null;
 
-        Vector3 P = transform.position;
+        Vector3 P = oceanEmitter.transform.position;
 
         float minDis = Mathf.Infinity;
         for (int i = 0; i < objecs.Length; i++)
@@ -87,7 +87,6 @@ public class Waves_Contrller : MonoBehaviour
 
         return nearestObject;
     }
-
 
     void changeDimensionSound(){
         var nearestTownPoint = nearestObject(town_points);
