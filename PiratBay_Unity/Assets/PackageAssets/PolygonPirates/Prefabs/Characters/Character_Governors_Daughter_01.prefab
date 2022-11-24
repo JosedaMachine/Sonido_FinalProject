@@ -3903,6 +3903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 496956}
   - component: {fileID: 9580976}
+  - component: {fileID: 7297532420341584058}
   m_Layer: 0
   m_Name: Character_Governors_Daughter_01
   m_TagString: Untagged
@@ -3951,7 +3952,7 @@ Animator:
   m_GameObject: {fileID: 154498}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 409520c9226982345a49c9803624f208, type: 3}
-  m_Controller: {fileID: 9100000, guid: 9b5f3dc79387670409bc8aac8597ddd2, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3961,6 +3962,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7297532420341584058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 122092196437e234aa8921cff0e0d760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  YValue: 2.12
 --- !u!1 &155098
 GameObject:
   m_ObjectHideFlags: 0

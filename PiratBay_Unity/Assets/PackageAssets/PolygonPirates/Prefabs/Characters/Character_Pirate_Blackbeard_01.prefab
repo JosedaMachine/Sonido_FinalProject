@@ -5671,6 +5671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 441856}
   - component: {fileID: 9521282}
+  - component: {fileID: 57893248585983205}
   m_Layer: 0
   m_Name: Character_Pirate_Blackbeard_01
   m_TagString: Untagged
@@ -5719,7 +5720,7 @@ Animator:
   m_GameObject: {fileID: 192002}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 409520c9226982345a49c9803624f208, type: 3}
-  m_Controller: {fileID: 9100000, guid: 9b5f3dc79387670409bc8aac8597ddd2, type: 2}
+  m_Controller: {fileID: 9100000, guid: f9fc4ab13979ea34c8732c229ad9d60b, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -5729,6 +5730,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &57893248585983205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 122092196437e234aa8921cff0e0d760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  YValue: 2.12
 --- !u!1 &192628
 GameObject:
   m_ObjectHideFlags: 0
