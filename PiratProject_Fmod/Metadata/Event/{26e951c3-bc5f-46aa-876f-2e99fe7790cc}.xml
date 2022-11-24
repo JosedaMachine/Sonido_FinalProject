@@ -36,7 +36,7 @@
 			<destination>{e893dbbc-41c5-452d-9bb1-f58958321319}</destination>
 		</relationship>
 		<relationship name="banks">
-			<destination>{15744dc3-001a-4068-97b6-6b8b60dcbd71}</destination>
+			<destination>{6e2b36ae-6dc9-4311-89fc-941f068db1b5}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{07c486ee-46ab-4c4f-b9a4-56d1f58b43d6}">
@@ -218,6 +218,9 @@
 		</property>
 		<property name="panBlend">
 			<value>0</value>
+		</property>
+		<property name="userLFELevel">
+			<value>-5</value>
 		</property>
 		<property name="userStereoSeparation">
 			<value>180</value>

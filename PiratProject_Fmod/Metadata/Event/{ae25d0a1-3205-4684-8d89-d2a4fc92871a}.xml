@@ -35,7 +35,7 @@
 			<destination>{26a1d6de-80d9-48bb-9bbf-b4e8d59ac12c}</destination>
 		</relationship>
 		<relationship name="banks">
-			<destination>{15744dc3-001a-4068-97b6-6b8b60dcbd71}</destination>
+			<destination>{6e2b36ae-6dc9-4311-89fc-941f068db1b5}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{637de10e-2c8e-403e-b40c-85a915c5a07d}">
@@ -204,12 +204,6 @@
 	<object class="SpatialiserEffect" id="{99867cd7-2887-4055-bfcb-4fd0aa7175fa}">
 		<property name="panBlend">
 			<value>0</value>
-		</property>
-		<property name="userStereoSeparation">
-			<value>180</value>
-		</property>
-		<property name="userStereoAxis">
-			<value>-104</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{b2d852ba-5db9-4a67-b031-3c23d5ed4902}">
