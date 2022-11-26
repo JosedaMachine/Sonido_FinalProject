@@ -5,7 +5,7 @@ using UnityEngine;
 public class stepController : MonoBehaviour
 {
     FMODUnity.StudioEventEmitter stepEmitter;
-
+    bool onSand = true;
 
     private void Start()
     {
@@ -35,5 +35,13 @@ public class stepController : MonoBehaviour
         {
             stepEmitter.EventInstance.setParameterByName("Run", 0);
         }
+    }
+
+    public void setSand()
+    {
+        onSand = !onSand;
+
+        if (onSand) stepEmitter.EventInstance.setParameterByName("Sand", 1);
+        else stepEmitter.EventInstance.setParameterByName("Sand", 0);
     }
 }
