@@ -16,7 +16,7 @@ public class stepController : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
             stepEmitter.EventInstance.setParameterByName("Moving", 1);
 
