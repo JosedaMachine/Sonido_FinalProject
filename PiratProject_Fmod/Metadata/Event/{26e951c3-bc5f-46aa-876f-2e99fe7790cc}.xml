@@ -118,19 +118,19 @@
 			<value>4000</value>
 		</property>
 		<property name="spawnRate">
-			<value>92</value>
+			<value>72</value>
 		</property>
 		<property name="minimumScatterDistance">
-			<value>80</value>
+			<value>8.80000019</value>
 		</property>
 		<property name="maximumScatterDistance">
 			<value>950</value>
 		</property>
 		<property name="volumeRandomization">
-			<value>-31</value>
+			<value>-42.5</value>
 		</property>
 		<property name="pitchRandomization">
-			<value>3.29999995</value>
+			<value>4</value>
 		</property>
 		<relationship name="sound">
 			<destination>{bb2294b7-d04d-4a48-9711-ff25c6c4ec91}</destination>

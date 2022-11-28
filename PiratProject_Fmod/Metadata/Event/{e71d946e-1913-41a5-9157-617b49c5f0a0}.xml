@@ -134,16 +134,25 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{21bb7ca7-241a-41fa-99f4-6389782889d1}">
+		<property name="volume">
+			<value>-16</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{69c882c9-f4f2-49e2-9625-619282711dee}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{681764d1-a546-4a4b-bc2e-79f89895cbf5}">
+		<property name="volume">
+			<value>-8</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{a6f63899-b9ef-4e64-b53a-ff595dcc4d8c}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{35f3daa0-980a-4887-bf8b-37847ce6be21}">
+		<property name="volume">
+			<value>-8</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{c9380c69-fa06-4c8d-b47b-f54135a7ff2d}</destination>
 		</relationship>
@@ -154,16 +163,25 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{19ed0f9d-24dd-40e2-9a3e-4d950e455cfc}">
+		<property name="volume">
+			<value>-7.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{1396437f-9a17-4eed-a61c-4e674746a574}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{17b41c33-6dac-4d00-be06-2e6e95e81540}">
+		<property name="volume">
+			<value>-6.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{430df920-eea7-48e1-b75a-677707496425}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{2d7745ac-7837-498c-8565-70a5808f3724}">
+		<property name="volume">
+			<value>-6.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{dcc6aba8-082d-4448-a0b7-5431d558488e}</destination>
 		</relationship>
@@ -187,7 +205,7 @@
 			<value>0</value>
 		</property>
 		<property name="userStereoSeparation">
-			<value>36</value>
+			<value>0</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{375b7160-1085-4b14-a57d-ab380586384f}</destination>
