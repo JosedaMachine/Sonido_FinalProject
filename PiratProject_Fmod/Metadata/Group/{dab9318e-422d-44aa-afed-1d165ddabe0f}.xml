@@ -22,7 +22,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{bc6e2dce-4aa2-446a-8626-a5c868999b47}" />
-	<object class="LowpassEffect" id="{ba485fb4-e7fa-4b86-959f-7513596f7367}" />
+	<object class="LowpassEffect" id="{ba485fb4-e7fa-4b86-959f-7513596f7367}">
+		<property name="cutoff">
+			<value>22000</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{dc65de54-8dd6-4e55-9f95-324ab86b02bf}" />
 	<object class="MultibandEqEffect" id="{3f3b2451-0c15-48e6-baf5-9e62cc8875e9}">
 		<relationship name="automators">
