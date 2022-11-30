@@ -33,6 +33,7 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{850d2ddd-9727-4748-ad63-bdc291be15a6}</destination>
+			<destination>{418e559a-1520-4eb7-94bf-b19684e86d4a}</destination>
 		</relationship>
 		<relationship name="banks">
 			<destination>{6e2b36ae-6dc9-4311-89fc-941f068db1b5}</destination>
@@ -59,7 +60,7 @@
 			<destination>{4c73d111-c71a-45ba-844a-f9fc38dcedc6}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{5df3e144-4bcd-49d1-93a1-0b787330aa23}</destination>
+			<destination>{dab9318e-422d-44aa-afed-1d165ddabe0f}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{3ea5073d-b7dd-4035-b253-43bceb25aefd}" />
@@ -83,6 +84,11 @@
 	<object class="ParameterProxy" id="{850d2ddd-9727-4748-ad63-bdc291be15a6}">
 		<relationship name="preset">
 			<destination>{a32f99f2-2f1e-4df2-9c9f-fce7bcd7439a}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterProxy" id="{418e559a-1520-4eb7-94bf-b19684e86d4a}">
+		<relationship name="preset">
+			<destination>{ee62bea6-5cc6-469c-8c62-1f52a17fc671}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{75fbe2b3-343e-4b81-9871-453c918b9cc1}">

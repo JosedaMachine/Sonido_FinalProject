@@ -39,10 +39,13 @@ public class loro : MonoBehaviour
     private bool playOrPause = true;
     private bool playOkay = false;
 
+    float timePeriod = 0.2f;
+    float timeSinceStart;
+
     void Start()
     {
         //Step 1: Check to see if any recording devices (or drivers) are plugged in and available for us to use.
-
+        timeSinceStart = (3 * timePeriod) / 4;
 
         RuntimeManager.CoreSystem.getRecordNumDrivers(out numofDrivers, out numOfDriversConnected);
 
@@ -110,13 +113,21 @@ public class loro : MonoBehaviour
         //        been pressed and if it has, then we pause or unpasue the channel that the Sound object is
         //        playing through.
 
+        float pitch = 0;
+        //Mathf.Sin(Time.timeSinceLevelLoad);
+
+        //pitch = 1.4f + ((float)Mathf.Sin(Time.time) * 0.3f);
+        pitch = 1.4f + ((float)Mathf.Sin(((Mathf.PI * 2) / timePeriod) * timeSinceStart) * 0.3f);
+        timeSinceStart += Time.deltaTime;
+        Debug.Log(pitch);
+
+        channel.setPitch(pitch);
 
         if (Input.GetKeyDown(PlayAndPause) && playOkay)
         {
             playOrPause = !playOrPause;
             channel.setPaused(playOrPause);
         }
-
 
         //Optional
         //Step 8: Set a reverb to the Sound object we're recording into and turn it on or off with a new button.
