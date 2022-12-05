@@ -13,7 +13,6 @@ public class Waves_Contrller : MonoBehaviour
     private FMOD.Studio.EventInstance wavesInstance;
     private FMOD.Studio.PARAMETER_ID _2D_ID;
 
-
     float maxDistanceAttenuation;
 
     private void Start() {
@@ -61,10 +60,6 @@ public class Waves_Contrller : MonoBehaviour
             }
         }
 
-        //Debug.Log(P);
-        //Debug.Log("Distance: " + minDis);
-        //Debug.Log(minDistancePoint);
-
         return minDistancePoint;
     }
 
@@ -90,7 +85,7 @@ public class Waves_Contrller : MonoBehaviour
 
     void changeDimensionSound(){
         var nearestTownPoint = nearestObject(town_points);
-        Debug.Log(nearestTownPoint.name);
+        //Debug.Log(nearestTownPoint.name);
 
         Vector3 Player = transform.position;
         Vector3 nearestTownPointPos = nearestTownPoint.transform.position;
@@ -110,8 +105,6 @@ public class Waves_Contrller : MonoBehaviour
 
         float _2D;
         wavesInstance.getParameterByID(_2D_ID, out _2D);
-        Debug.Log("Ocean 2D:" +  _2D);
-
     }
 
     // Update is called once per frame
