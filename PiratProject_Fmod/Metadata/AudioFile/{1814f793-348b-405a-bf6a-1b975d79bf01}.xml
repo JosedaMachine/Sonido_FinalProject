@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{1814f793-348b-405a-bf6a-1b975d79bf01}">
+		<property name="assetPath">
+			<value>Effects/WalkSounds/Sand/ES_Tennis Shoes 160 - SFX Producer.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.82133333333333336</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{df812fd1-ac55-4b51-92a9-9c427ace5e20}</destination>
+		</relationship>
+	</object>
+</objects>

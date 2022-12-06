@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{e27c6b3f-f13e-44ab-8201-24689f0ccae9}">
 		<property name="assetPath">
-			<value>hipo.wav</value>
+			<value>Effects/hipo.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

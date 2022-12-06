@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{0dcf4748-e382-4a26-9a86-c32d7848374e}">
 		<property name="assetPath">
-			<value>water_steps.mp3</value>
+			<value>Effects/WalkSounds/Water/water_steps.mp3</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

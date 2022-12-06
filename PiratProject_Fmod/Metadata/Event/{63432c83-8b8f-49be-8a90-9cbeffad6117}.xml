@@ -44,9 +44,11 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{5cb8cb86-8901-46bf-98f4-2f79bd44e1fe}</destination>
+			<destination>{28aa20ad-b5c4-4435-9a78-b24e9b8160c7}</destination>
 		</relationship>
 		<relationship name="banks">
 			<destination>{15744dc3-001a-4068-97b6-6b8b60dcbd71}</destination>
+			<destination>{877a74fd-3bd8-426f-b244-803d400b9db6}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{4e7741cd-b685-4d90-b366-224b948ac754}">
@@ -133,6 +135,11 @@
 			<destination>{ca2adee4-3a87-4ef7-9522-02335169238a}</destination>
 		</relationship>
 	</object>
+	<object class="ParameterProxy" id="{28aa20ad-b5c4-4435-9a78-b24e9b8160c7}">
+		<relationship name="preset">
+			<destination>{c9bd9670-03ba-4874-bfe4-25aed37d4a43}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{2b98164b-8cb0-4a00-bd29-ae8001acff10}">
 		<relationship name="effectChain">
 			<destination>{431e3929-5be4-434b-8a76-30d67e954f0a}</destination>
@@ -185,7 +192,7 @@
 	</object>
 	<object class="MultiSound" id="{a9df1749-a761-41e8-b677-2156c610bc10}">
 		<property name="length">
-			<value>5</value>
+			<value>18</value>
 		</property>
 		<relationship name="automators">
 			<destination>{eb87691b-3bb5-414d-8b6a-28caf4f1dc8e}</destination>
@@ -199,6 +206,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{7fe78a2c-bdc6-4bb5-9c23-7dff44e6bb78}">
+		<property name="volume">
+			<value>-9</value>
+		</property>
 		<property name="name">
 			<value>Audio 3</value>
 		</property>
@@ -224,6 +234,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{0a0a7f76-a910-45da-9aa4-f143a9a017b2}">
+		<property name="volume">
+			<value>-13.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 2</value>
 		</property>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{14fa75a6-0949-4df0-89cc-f270d50335f3}">
+		<property name="assetPath">
+			<value>Effects/WalkSounds/Wood/WoodWalk8.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.63375000000000004</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{df812fd1-ac55-4b51-92a9-9c427ace5e20}</destination>
+		</relationship>
+	</object>
+</objects>

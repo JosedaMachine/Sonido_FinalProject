@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{1e8a2d36-9d68-4641-b044-9cb6b53b2525}">
+		<property name="assetPath">
+			<value>Effects/WalkSounds/Sand/SandWalk0.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.76660416666666664</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{df812fd1-ac55-4b51-92a9-9c427ace5e20}</destination>
+		</relationship>
+	</object>
+</objects>

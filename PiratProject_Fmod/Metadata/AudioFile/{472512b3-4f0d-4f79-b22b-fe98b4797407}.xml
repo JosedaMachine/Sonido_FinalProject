@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{472512b3-4f0d-4f79-b22b-fe98b4797407}">
 		<property name="assetPath">
-			<value>Seagulls/seagulls_6.wav</value>
+			<value>Ambience/Seagulls/seagulls_6.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

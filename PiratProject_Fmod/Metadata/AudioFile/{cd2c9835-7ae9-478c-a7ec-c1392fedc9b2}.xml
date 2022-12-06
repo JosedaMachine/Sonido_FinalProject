@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{cd2c9835-7ae9-478c-a7ec-c1392fedc9b2}">
+		<property name="assetPath">
+			<value>Effects/WalkSounds/Water/WaterWalk10.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.87141666666666662</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{df812fd1-ac55-4b51-92a9-9c427ace5e20}</destination>
+		</relationship>
+	</object>
+</objects>
