@@ -4,6 +4,9 @@
 		<property name="name">
 			<value>all</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{cd4bdb1a-1a23-4919-ac75-d6ed28760d43}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{6f70f10a-0dc0-4826-82b2-e98d3723e4b5}</destination>
 		</relationship>
@@ -12,6 +15,20 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{5df3e144-4bcd-49d1-93a1-0b787330aa23}</destination>
+		</relationship>
+	</object>
+	<object class="SidechainModulator" id="{cd4bdb1a-1a23-4919-ac75-d6ed28760d43}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="amount">
+			<value>80</value>
+		</property>
+		<property name="minimumThreshold">
+			<value>-25.5</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{69de33c2-4da0-497b-be27-ca510e7084d7}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{6f70f10a-0dc0-4826-82b2-e98d3723e4b5}">
