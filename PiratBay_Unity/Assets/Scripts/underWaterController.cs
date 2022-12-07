@@ -9,11 +9,10 @@ public class underWaterController : MonoBehaviour
     private void Update()
     {
 
-
         if (transform.position.y > head.transform.position.y)
         {
             float dist = transform.position.y - head.transform.position.y;
-            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("underWater", 0.6f);
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("underWater", dist);
         }
     }
 
