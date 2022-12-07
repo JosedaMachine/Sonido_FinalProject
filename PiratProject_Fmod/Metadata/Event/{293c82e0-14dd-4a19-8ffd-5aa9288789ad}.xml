@@ -31,6 +31,9 @@
 		<relationship name="timeline">
 			<destination>{d6b751c8-d01f-4269-845e-b0f9091bb9d0}</destination>
 		</relationship>
+		<relationship name="banks">
+			<destination>{6e2b36ae-6dc9-4311-89fc-941f068db1b5}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixer" id="{8736b3c5-536e-41db-b859-8e39871537ca}">
 		<relationship name="masterBus">
@@ -50,7 +53,7 @@
 			<destination>{42c5c1d4-d726-4f13-9017-09de87f3ca6c}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{3283926a-6255-4ded-a338-7e62cc96fc67}</destination>
+			<destination>{5df3e144-4bcd-49d1-93a1-0b787330aa23}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{90deffe0-3c06-48fb-aed7-8458325cec98}" />
@@ -118,10 +121,12 @@
 	<object class="MixerBusEffectChain" id="{83fcd80c-cdac-41b7-a0ce-66f9a5727b54}">
 		<relationship name="effects">
 			<destination>{d900c69f-b0fd-4d21-b945-7c8d0daf082b}</destination>
+			<destination>{55e65aba-9baf-431f-b4cb-f57a8272b61c}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f39379de-2c08-4d7a-9f0c-f0e7137ec18e}" />
 	<object class="MixerBusFader" id="{cf5a3df8-a9b2-4005-b310-2f2878481006}" />
 	<object class="SpatialiserEffect" id="{44c0e220-51ae-4705-ac74-22b4837d04f1}" />
 	<object class="MixerBusFader" id="{d900c69f-b0fd-4d21-b945-7c8d0daf082b}" />
+	<object class="Sidechain" id="{55e65aba-9baf-431f-b4cb-f57a8272b61c}" />
 </objects>
