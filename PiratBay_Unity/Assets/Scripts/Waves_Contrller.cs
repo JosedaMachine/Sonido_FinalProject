@@ -114,5 +114,18 @@ public class Waves_Contrller : MonoBehaviour
         //Movemos constantemente la posicion de la fuente de sonido del mar, para que siempre suene al lado del jugador
         var newPos = getMinDistanceRect();
         oceanEmitter.transform.position = Vector3.Lerp(oceanEmitter.transform.position, newPos, (oceanEmitter.transform.position - newPos).magnitude/ 60.0f);
+
+
+        drawLinePoints();
+    }
+
+    void drawLinePoints(){
+
+        for (int i = 0; i < waves_Sources.Length - 1; i++){
+            Debug.DrawLine(waves_Sources[i].transform.position, waves_Sources[i + 1].transform.position, Color.red);
+        }
+        //Dibujamos la ultima linea (primer punto con ultimo)
+        Debug.DrawLine(waves_Sources[waves_Sources.Length - 1].transform.position, waves_Sources[0].transform.position, Color.red);
+
     }
 }

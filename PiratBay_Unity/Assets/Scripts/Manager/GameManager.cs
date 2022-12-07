@@ -50,4 +50,9 @@ public class GameManager : MonoBehaviour
     {
         UIManager.theUIManager.toggleParrotText();
     }
+
+    public void toggleCanonText()
+    {
+        UIManager.theUIManager.toggleCanonText();
+    }
 }

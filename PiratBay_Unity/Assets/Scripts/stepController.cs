@@ -59,7 +59,6 @@ public class stepController : MonoBehaviour
             {
                 stepInstance.start();
                 playing = true;
-                Debug.Log("Play");
             }
         }
         else{

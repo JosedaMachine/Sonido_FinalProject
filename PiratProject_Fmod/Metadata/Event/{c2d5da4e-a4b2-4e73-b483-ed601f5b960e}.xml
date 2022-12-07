@@ -5,7 +5,7 @@
 			<value>crowdMarket</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{3f3d033b-32da-4aeb-bb63-b5a073b57645}</destination>
@@ -119,6 +119,7 @@
 	<object class="MixerBusEffectChain" id="{a0d5548b-b59c-4f4f-aef2-e28530741f4b}">
 		<relationship name="effects">
 			<destination>{97b98305-3478-4ba1-a9cd-e437cffbeea1}</destination>
+			<destination>{9b8a187f-d61e-4b06-a9ed-46270e261fd6}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ec5ad160-9440-4370-b81e-bcee237663b9}" />
@@ -138,6 +139,7 @@
 	</object>
 	<object class="MixerBusPanner" id="{2eb81794-7005-4de4-b70b-10e20958a431}" />
 	<object class="MixerBusFader" id="{97b98305-3478-4ba1-a9cd-e437cffbeea1}" />
+	<object class="SpatialiserEffect" id="{9b8a187f-d61e-4b06-a9ed-46270e261fd6}" />
 	<object class="AutomationPoint" id="{23a87933-66ca-48cd-a69c-a3bf8d78a7dd}">
 		<property name="position">
 			<value>0</value>

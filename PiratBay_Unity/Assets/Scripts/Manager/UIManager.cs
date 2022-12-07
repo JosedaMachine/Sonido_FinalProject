@@ -9,6 +9,9 @@ public class UIManager : MonoBehaviour
 
     [SerializeField]
     private TMPro.TMP_Text parrotText;
+
+    [SerializeField]
+    private TMPro.TMP_Text canonText;
     private void Awake(){
 
     }
@@ -20,6 +23,11 @@ public class UIManager : MonoBehaviour
 
     public void toggleParrotText(){
         parrotText.enabled = !parrotText.enabled;
+    }
+
+    public void toggleCanonText()
+    {
+        canonText.enabled = !canonText.enabled;
     }
 
 }
