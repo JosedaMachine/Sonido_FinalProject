@@ -44,24 +44,43 @@ public class Waves_Contrller : MonoBehaviour
         float minDis = Mathf.Infinity;
         for (int i = 0; i < waves_Sources.Length - 1; i++){
             //Definimos la recta
-            Vector3 A = waves_Sources[i].transform.position;
-            Vector3 B = waves_Sources[i + 1].transform.position;
-            Vector3 aux;
+            Vector3 A_ = waves_Sources[i].transform.position;
+            Vector3 B_ = waves_Sources[i + 1].transform.position;
+            Vector3 aux_;
+            float distance_ = calMinDistancePointToRect(A_, B_, P, out aux_);
 
-            if (Vector3.Dot(A - B, P - A) > 0) aux = A;
-            else if (Vector3.Dot(B - A, P - B) > 0) aux = B;
-            else aux = A + Vector3.Project(P - A, B - A);
-
-            float distance = (P - aux).magnitude;
-            if(distance < minDis)
-            {
-                minDis = distance;
-                minDistancePoint = aux;
+            if (distance_ < minDis){
+                minDis = distance_;
+                minDistancePoint = aux_;
             }
+        }
+
+        //Ahora entre el ultimo y el primero
+        Vector3 A = waves_Sources[waves_Sources.Length - 1].transform.position;
+        Vector3 B = waves_Sources[0].transform.position;
+        Vector3 aux;
+        float distance = calMinDistancePointToRect(A, B, P, out aux);
+
+        if (distance < minDis)
+        {
+            minDis = distance;
+            minDistancePoint = aux;
         }
 
         return minDistancePoint;
     }
+
+    private float calMinDistancePointToRect(Vector3 A, Vector3 B, Vector3 P, out Vector3 aux){
+        //Definimos la recta
+        if (Vector3.Dot(A - B, P - A) > 0) aux = A;
+        else if (Vector3.Dot(B - A, P - B) > 0) aux = B;
+        else aux = A + Vector3.Project(P - A, B - A);
+
+        float distance = (P - aux).magnitude;
+
+        return distance;
+    }
+
 
     private GameObject nearestObject(GameObject[] objecs){
         GameObject nearestObject = null;

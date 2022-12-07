@@ -48,11 +48,11 @@ public class stepController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/hipo");
+        //if (Input.GetKey(KeyCode.Space))
+        //{
+        //    FMODUnity.RuntimeManager.PlayOneShot("event:/hipo");
 
-        }
+        //}
 
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)){
             if (!playing)
