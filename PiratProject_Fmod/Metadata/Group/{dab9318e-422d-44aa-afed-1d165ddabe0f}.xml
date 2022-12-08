@@ -25,7 +25,7 @@
 			<value>80</value>
 		</property>
 		<property name="minimumThreshold">
-			<value>-33</value>
+			<value>-74</value>
 		</property>
 		<relationship name="sidechains">
 			<destination>{69de33c2-4da0-497b-be27-ca510e7084d7}</destination>
