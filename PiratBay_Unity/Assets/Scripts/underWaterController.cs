@@ -44,6 +44,7 @@ public class underWaterController : MonoBehaviour
 
             this.enabled = false;
             //Debug.Log("Outside water");
+            colorGrading_.mixerRedOutBlueIn.value = 0;
             FMODUnity.RuntimeManager.StudioSystem.setParameterByName("underWater", 0.0f);
         }
     }

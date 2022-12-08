@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,10 +7,14 @@ public class ParrotController : MonoBehaviour
 {
     // Start is called before the first frame update
     ParrotVoice parrotV;
-    
+
+    [SerializeField]
+    FMODUnity.EventReference frenchEventRef;
+
+    private FMOD.Studio.EventInstance frenchInstance;
     void Start() {
         parrotV = GetComponent<ParrotVoice>();
-
+        frenchInstance = RuntimeManager.CreateInstance(frenchEventRef);
     }
 
     // Update is called once per frame
@@ -23,6 +28,7 @@ public class ParrotController : MonoBehaviour
 
         if(player != null){
             parrotV.tooglePlay();
+            frenchInstance.start();
             GameManager.Instance.toggleParrotText();
         }
     }
