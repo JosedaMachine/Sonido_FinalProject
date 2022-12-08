@@ -114,7 +114,7 @@ public class stepController : MonoBehaviour
 
             if((Terrain)((int)_terrain) == Terrain.Sand)
             {
-                Debug.Log("Puerto");
+                //Debug.Log("Puerto");
                 stepInstance.setParameterByID(Terrain_ID, (float)Terrain.Wood);
             }
 

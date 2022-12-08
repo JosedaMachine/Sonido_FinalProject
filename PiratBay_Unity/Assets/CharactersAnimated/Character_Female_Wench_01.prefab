@@ -1630,6 +1630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 453744}
   - component: {fileID: 9572824}
+  - component: {fileID: 6431701612468868823}
   m_Layer: 0
   m_Name: Character_Female_Wench_01
   m_TagString: Untagged
@@ -1688,6 +1689,38 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6431701612468868823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1252102587
+      Data2: 1138926940
+      Data3: -174167380
+      Data4: 1893041812
+    Path: event:/walkEffect_Citizens
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params:
+  - Name: Terrain
+    Value: 0
+  OverrideAttenuation: 1
+  OverrideMinDistance: 2.16
+  OverrideMaxDistance: 4.4
 --- !u!1 &129178
 GameObject:
   m_ObjectHideFlags: 0

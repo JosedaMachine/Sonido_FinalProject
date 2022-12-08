@@ -469,7 +469,7 @@ public class FirstPersonController : MonoBehaviour
             {
                 landInstance.start();
                 jumpInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-                Debug.Log("Esta en el suelo");
+                //Debug.Log("Esta en el suelo");
             }
             
             isGrounded = true;
@@ -481,7 +481,7 @@ public class FirstPersonController : MonoBehaviour
             if (isGrounded)
             {
                 jumpInstance.start();
-                Debug.Log("Esta en el aire");
+                //Debug.Log("Esta en el aire");
             }
 
             isGrounded = false;
