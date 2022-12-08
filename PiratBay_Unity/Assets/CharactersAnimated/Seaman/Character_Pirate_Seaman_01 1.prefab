@@ -445,7 +445,7 @@ MonoBehaviour:
       Data2: 1138926940
       Data3: -174167380
       Data4: 1893041812
-    Path: event:/walkEffect_Citizens
+    Path: event:/movement/walkEffect_Citizens
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -455,9 +455,9 @@ MonoBehaviour:
   Params:
   - Name: Terrain
     Value: 0
-  OverrideAttenuation: 1
-  OverrideMinDistance: 2.16
-  OverrideMaxDistance: 4.4
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &112460
 GameObject:
   m_ObjectHideFlags: 0

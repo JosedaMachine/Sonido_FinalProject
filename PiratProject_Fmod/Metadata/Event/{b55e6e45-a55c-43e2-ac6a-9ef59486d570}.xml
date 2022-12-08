@@ -537,7 +537,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{45d2c609-5efb-4c67-b7ce-7ce1e37cd947}" />
-	<object class="SpatialiserEffect" id="{2dd364f2-6ac5-4246-ab79-e0b71ec793c7}" />
+	<object class="SpatialiserEffect" id="{2dd364f2-6ac5-4246-ab79-e0b71ec793c7}">
+		<property name="minimumDistance">
+			<value>2.79999995</value>
+		</property>
+		<property name="maximumDistance">
+			<value>15</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{9b7914eb-3b5a-4fa3-9a61-bd55b5156a8c}">
 		<property name="position">
 			<value>0</value>
@@ -603,7 +613,7 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-11</value>
+			<value>-22</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{f15f2010-9bcc-4a84-b6db-542392d146e7}">
@@ -627,7 +637,7 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>-10</value>
+			<value>-1</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{0def12c7-f695-499c-a728-d800c82fdccb}">
