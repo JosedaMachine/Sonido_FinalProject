@@ -8,10 +8,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
 
 #if UNITY_EDITOR
-    using UnityEditor;
-    using System.Net;
+using UnityEditor;
+using System.Net;
 #endif
 
 public class FirstPersonController : MonoBehaviour
@@ -53,8 +54,10 @@ public class FirstPersonController : MonoBehaviour
     #endregion
     #endregion
 
-    #region Movement Variables
+    FMOD.Studio.EventInstance jumpInstance;
+    FMOD.Studio.EventInstance landInstance;
 
+    #region Movement Variables
     public bool playerCanMove = true;
     public float walkSpeed = 5f;
     public float maxVelocityChange = 10f;
@@ -125,6 +128,8 @@ public class FirstPersonController : MonoBehaviour
     public float bobSpeed = 10f;
     public Vector3 bobAmount = new Vector3(.15f, .05f, 0f);
 
+
+
     // Internal Variables
     private Vector3 jointOriginalPos;
     private float timer = 0;
@@ -151,7 +156,15 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
-        if(lockCursor)
+        var stepCtrl = GetComponent<stepController>();
+
+        var jumpEventRef_ = stepCtrl.jumpEventRef;
+        var landEventRef_ = stepCtrl.landEventRef;
+
+        jumpInstance = RuntimeManager.CreateInstance(jumpEventRef_);
+        landInstance = RuntimeManager.CreateInstance(landEventRef_);
+
+        if (lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
@@ -451,10 +464,26 @@ public class FirstPersonController : MonoBehaviour
         if (Physics.Raycast(origin, direction, out RaycastHit hit, distance))
         {
             Debug.DrawRay(origin, direction * distance, Color.red);
+
+            if (!isGrounded)
+            {
+                landInstance.start();
+                jumpInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                Debug.Log("Esta en el suelo");
+            }
+            
             isGrounded = true;
+
+
         }
         else
         {
+            if (isGrounded)
+            {
+                jumpInstance.start();
+                Debug.Log("Esta en el aire");
+            }
+
             isGrounded = false;
         }
     }
@@ -465,7 +494,7 @@ public class FirstPersonController : MonoBehaviour
         if (isGrounded)
         {
             rb.AddForce(0f, jumpPower, 0f, ForceMode.Impulse);
-            isGrounded = false;
+            //isGrounded = false;
         }
 
         // When crouched and using toggle system, will uncrouch for a jump
@@ -526,11 +555,17 @@ public class FirstPersonController : MonoBehaviour
             joint.localPosition = new Vector3(Mathf.Lerp(joint.localPosition.x, jointOriginalPos.x, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.y, jointOriginalPos.y, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.z, jointOriginalPos.z, Time.deltaTime * bobSpeed));
         }
     }
+
+    public bool isGrounding()
+    {
+        return isGrounded;
+    }
 }
 
 
 
 // Custom Editor
+    
 #if UNITY_EDITOR
     [CustomEditor(typeof(FirstPersonController)), InitializeOnLoadAttribute]
     public class FirstPersonControllerEditor : Editor

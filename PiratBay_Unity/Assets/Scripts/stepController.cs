@@ -16,15 +16,26 @@ public class stepController : MonoBehaviour
 {
     [SerializeField]
     FMODUnity.EventReference stepEventRef;
+
+    public FMODUnity.EventReference jumpEventRef;
+    public FMODUnity.EventReference landEventRef;
+
+
     private FMOD.Studio.EventInstance stepInstance;
     private FMOD.Studio.PARAMETER_ID Terrain_ID;
     private FMOD.Studio.PARAMETER_ID MovingType_ID;
+
+    FirstPersonController movementController;
+
 
     bool onSand = true;
     bool playing;
     private void Start()
     {
         playing = false;
+
+
+        movementController = GetComponent<FirstPersonController>();
 
         stepInstance = RuntimeManager.CreateInstance(stepEventRef);
 
@@ -54,7 +65,7 @@ public class stepController : MonoBehaviour
 
         //}
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)){
+        if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && movementController.isGrounding()){
             if (!playing)
             {
                 stepInstance.start();
