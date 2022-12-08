@@ -114,6 +114,35 @@ MonoBehaviour:
   - {fileID: -3318692205521793249}
   - {fileID: 8101315633121192227}
   - {fileID: 8663905923616605348}
+  - {fileID: 1289554585259936627}
+--- !u!114 &1289554585259936627
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
+  m_Name: Grain
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  colored:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 0.211
+  size:
+    overrideState: 0
+    value: 1
+  lumContrib:
+    overrideState: 0
+    value: 0.8
 --- !u!114 &2347121342453465803
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -131,23 +160,23 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   mode:
-    overrideState: 0
+    overrideState: 1
     value: 0
   color:
-    overrideState: 0
-    value: {r: 0, g: 0, b: 0, a: 1}
+    overrideState: 1
+    value: {r: 0.7176471, g: 0.38505077, b: 0.08627451, a: 1}
   center:
     overrideState: 0
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.351
+    value: 0.482
   smoothness:
-    overrideState: 0
-    value: 0.2
+    overrideState: 1
+    value: 0.103
   roundness:
-    overrideState: 0
-    value: 1
+    overrideState: 1
+    value: 0.985
   rounded:
     overrideState: 0
     value: 0

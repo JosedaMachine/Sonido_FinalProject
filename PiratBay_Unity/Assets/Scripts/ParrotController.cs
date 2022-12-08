@@ -22,7 +22,6 @@ public class ParrotController : MonoBehaviour
         var player = other.GetComponent<FirstPersonController>();
 
         if(player != null){
-            Debug.Log("Talk To Parrot");
             parrotV.tooglePlay();
             GameManager.Instance.toggleParrotText();
         }
@@ -32,7 +31,6 @@ public class ParrotController : MonoBehaviour
         var player = other.GetComponent<FirstPersonController>();
 
         if (player != null){
-            Debug.Log("Cannot talk to parrot");
             parrotV.tooglePlay();
             GameManager.Instance.toggleParrotText();
         }

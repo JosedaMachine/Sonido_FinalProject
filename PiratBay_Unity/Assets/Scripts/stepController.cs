@@ -79,6 +79,7 @@ public class stepController : MonoBehaviour
             }
         }
 
+
         //if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         //{
         //    stepEmitter.EventInstance.setParameterByName("Moving", 0);
@@ -112,7 +113,10 @@ public class stepController : MonoBehaviour
             stepInstance.getParameterByID(Terrain_ID, out _terrain);
 
             if((Terrain)((int)_terrain) == Terrain.Sand)
+            {
+                Debug.Log("Puerto");
                 stepInstance.setParameterByID(Terrain_ID, (float)Terrain.Wood);
+            }
 
             if ((Terrain)((int)_terrain) == Terrain.Wood)
                 stepInstance.setParameterByID(Terrain_ID, (float)Terrain.Sand);
