@@ -25,7 +25,6 @@ public class underWaterController : MonoBehaviour
             float dist = Mathf.Abs(transform.position.y - head.transform.position.y);
             dist = Mathf.Clamp(dist / thresholdDistance, 0.0f, 1.0f);
             colorGrading_.mixerRedOutBlueIn.value = dist * rangeBlueFilter;
-            //Debug.Log(dist);
             FMODUnity.RuntimeManager.StudioSystem.setParameterByName("underWater", dist);
         }
     }
@@ -35,7 +34,7 @@ public class underWaterController : MonoBehaviour
         if (other.GetComponent<stepController>() != null)
         {
             this.enabled = true;
-            Debug.Log("In water");
+            //Debug.Log("In water");
         }
     }
 
@@ -44,7 +43,7 @@ public class underWaterController : MonoBehaviour
         if (other.GetComponent<stepController>() != null){
 
             this.enabled = false;
-            Debug.Log("outside");
+            //Debug.Log("Outside water");
             FMODUnity.RuntimeManager.StudioSystem.setParameterByName("underWater", 0.0f);
         }
     }

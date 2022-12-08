@@ -20,7 +20,6 @@ public class stepController : MonoBehaviour
     public FMODUnity.EventReference jumpEventRef;
     public FMODUnity.EventReference landEventRef;
 
-
     private FMOD.Studio.EventInstance stepInstance;
     private FMOD.Studio.PARAMETER_ID Terrain_ID;
     private FMOD.Studio.PARAMETER_ID MovingType_ID;
