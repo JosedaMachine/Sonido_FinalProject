@@ -10,11 +10,12 @@ public class ParrotController : MonoBehaviour
 
     [SerializeField]
     FMODUnity.EventReference frenchEventRef;
-
+    private Outline outlineCmp;
     private FMOD.Studio.EventInstance frenchInstance;
     void Start() {
         parrotV = GetComponent<ParrotVoice>();
         frenchInstance = RuntimeManager.CreateInstance(frenchEventRef);
+        outlineCmp = GetComponentInParent<Outline>();
     }
 
     // Update is called once per frame
@@ -27,6 +28,10 @@ public class ParrotController : MonoBehaviour
         var player = other.GetComponent<FirstPersonController>();
 
         if(player != null){
+
+            if (outlineCmp != null && !outlineCmp.enabled)
+                outlineCmp.enabled = true;
+
             parrotV.tooglePlay();
             frenchInstance.start();
             GameManager.Instance.toggleParrotText();

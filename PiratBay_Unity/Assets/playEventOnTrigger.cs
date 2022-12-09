@@ -5,11 +5,13 @@ using UnityEngine;
 public class playEventOnTrigger : MonoBehaviour
 {
     public FMODUnity.StudioEventEmitter emitter;
+    private Outline outlineCmp;
     // Start is called before the first frame update
     bool hasBeenPlayed;
     void Start()
     {
         hasBeenPlayed = false;
+        outlineCmp = GetComponentInParent<Outline>();
     }
 
     // Update is called once per frame
@@ -22,6 +24,9 @@ public class playEventOnTrigger : MonoBehaviour
         if (other.GetComponent<FirstPersonController>() != null && !hasBeenPlayed)
         {
             hasBeenPlayed=true;
+            if (outlineCmp != null)
+                outlineCmp.enabled = true;
+
             Debug.Log("PLayer");
             emitter.Play();
         }
