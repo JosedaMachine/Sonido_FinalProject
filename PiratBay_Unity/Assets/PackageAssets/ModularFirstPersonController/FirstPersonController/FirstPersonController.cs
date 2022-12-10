@@ -102,7 +102,7 @@ public class FirstPersonController : MonoBehaviour
     public float jumpPower = 5f;
 
     // Internal Variables
-    private bool isGrounded = false;
+    private bool isGrounded = false, hasJumped = false;
 
     #endregion
 
@@ -465,8 +465,9 @@ public class FirstPersonController : MonoBehaviour
         {
             Debug.DrawRay(origin, direction * distance, Color.red);
 
-            if (!isGrounded)
+            if (!isGrounded && hasJumped)
             {
+                hasJumped = false;
                 landInstance.start();
                 jumpInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
                 //Debug.Log("Esta en el suelo");
@@ -478,7 +479,7 @@ public class FirstPersonController : MonoBehaviour
         }
         else
         {
-            if (isGrounded)
+            if (isGrounded && hasJumped)
             {
                 jumpInstance.start();
                 //Debug.Log("Esta en el aire");
@@ -495,6 +496,7 @@ public class FirstPersonController : MonoBehaviour
         {
             rb.AddForce(0f, jumpPower, 0f, ForceMode.Impulse);
             //isGrounded = false;
+            hasJumped = true;
         }
 
         // When crouched and using toggle system, will uncrouch for a jump

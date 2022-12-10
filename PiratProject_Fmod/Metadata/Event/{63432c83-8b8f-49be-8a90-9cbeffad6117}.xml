@@ -4,6 +4,9 @@
 		<property name="name">
 			<value>sandWalkEffects</value>
 		</property>
+		<property name="isDefault">
+			<value>true</value>
+		</property>
 		<property name="outputFormat">
 			<value>1</value>
 		</property>
@@ -43,7 +46,6 @@
 			<destination>{5e69b87f-1948-4997-853d-745a7493f13a}</destination>
 		</relationship>
 		<relationship name="parameters">
-			<destination>{5cb8cb86-8901-46bf-98f4-2f79bd44e1fe}</destination>
 			<destination>{28aa20ad-b5c4-4435-9a78-b24e9b8160c7}</destination>
 		</relationship>
 		<relationship name="banks">
@@ -127,11 +129,6 @@
 			<destination>{55adc2b5-124c-4108-b844-c5849c338e9d}</destination>
 			<destination>{1163cfba-e7a9-4c66-8dd7-e7ca1120f648}</destination>
 			<destination>{91e4bd09-3eb2-48c9-9119-e455f46b8d75}</destination>
-		</relationship>
-	</object>
-	<object class="ParameterProxy" id="{5cb8cb86-8901-46bf-98f4-2f79bd44e1fe}">
-		<relationship name="preset">
-			<destination>{ca2adee4-3a87-4ef7-9522-02335169238a}</destination>
 		</relationship>
 	</object>
 	<object class="ParameterProxy" id="{28aa20ad-b5c4-4435-9a78-b24e9b8160c7}">

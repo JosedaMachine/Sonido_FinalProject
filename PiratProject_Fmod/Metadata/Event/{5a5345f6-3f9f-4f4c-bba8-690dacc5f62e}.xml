@@ -105,7 +105,7 @@
 			<value>6000</value>
 		</property>
 		<property name="spawnRate">
-			<value>16</value>
+			<value>20</value>
 		</property>
 		<property name="minimumScatterDistance">
 			<value>0</value>
